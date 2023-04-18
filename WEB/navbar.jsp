@@ -12,7 +12,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="home.html">Home</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.jsp">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.jsp">Sign Up</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/add-book-page">Add Book</a>
                     </li>

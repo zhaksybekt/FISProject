@@ -7,8 +7,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kz.zhaxybek.projectbook.db.DBManager;
-
 @WebServlet(value = "/save-book")
 public class SaveBookServlet extends HttpServlet {
     @Override
@@ -29,7 +27,7 @@ public class SaveBookServlet extends HttpServlet {
         String description =
                 request.getParameter("book_description");
         Book book =
-                DBManager.getBook(id);
+                DBConnection.getBook(id);
         if(book!=null){
             book.setName(name);
             book.setAuthor(author);

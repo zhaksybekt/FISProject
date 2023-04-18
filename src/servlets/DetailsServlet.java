@@ -7,8 +7,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kz.zhaxybek.projectbook.db.DBManager;
-
 @WebServlet(value = "/details")
 public class DetailsServlet extends HttpServlet {
 
@@ -20,7 +18,7 @@ public class DetailsServlet extends HttpServlet {
         }
         catch (Exception e){
         }
-        Book book = DBManager.getBook(id);
+        Book book = DBConnection.getBook(id);
         request.setAttribute(
                 "kniga", book);
         request.getRequestDispatcher

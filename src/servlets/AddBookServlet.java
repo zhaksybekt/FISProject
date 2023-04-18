@@ -10,7 +10,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kz.zhaxybek.projectbook.db.DBManager;
 
 @WebServlet(value = "/add-book")
 public class AddBookServlet extends HttpServlet {
@@ -30,7 +29,7 @@ public class AddBookServlet extends HttpServlet {
         book.setAuthor(author);
         book.setGenre(genre);
         book.setDescription(description);
-        DBManager.addBook(book);
+        DBConnection.addBook(book);
         response.sendRedirect("home.html");
 
     }
