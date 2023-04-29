@@ -1,4 +1,5 @@
 package kz.zhaxybek.projectbook.db;
+
 public class Book {
     private int id;
     private String name;

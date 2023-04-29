@@ -65,7 +65,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-12">
-                    <textarea class="form-control" readonly rows="10"><%=book.getDescription()%></textarea>
+                    <textarea class="form-control" readonly rows="10" style="width: 1000px"><%=book.getDescription()%></textarea>
                 </div>
             </div>
             <div class="row mt-3">

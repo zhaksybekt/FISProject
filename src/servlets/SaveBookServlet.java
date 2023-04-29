@@ -1,4 +1,5 @@
 package servlets;
+
 import kz.zhaxybek.projectbook.db.Book;
 import kz.zhaxybek.projectbook.db.DBConnection;
 import java.io.IOException;
@@ -7,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 @WebServlet(value = "/save-book")
 public class SaveBookServlet extends HttpServlet {
     @Override
@@ -14,7 +16,6 @@ public class SaveBookServlet extends HttpServlet {
             HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-
         int id = Integer.parseInt(request.getParameter("book_id"));
         String name =
                 request.getParameter("book_name");

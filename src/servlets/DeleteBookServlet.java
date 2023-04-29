@@ -13,6 +13,6 @@ public class DeleteBookServlet extends HttpServlet{
             throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         DBConnection.deleteBook(id);
-        response.sendRedirect("/");
+        response.sendRedirect("home.html");
     }
 }

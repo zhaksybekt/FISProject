@@ -10,7 +10,9 @@
 <%@include file="navbar.jsp"%>
 <div class="container mt-3">
     <div class="row">
-
+        <h4 class="text-center">
+           <%=siteName%>
+        </h4>
     </div>
     <div class="row mt-3">
         <div class="col-12">
